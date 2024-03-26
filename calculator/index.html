@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p> размер окна, мм</p>
+        <textarea name="width" cols="" rows="" id="commWidth"></textarea>ширина</p>
+        <p>X</p>
+        <textarea name="height" cols="" rows="" id="commHeight"></textarea>высота</p>
+    </div>
+    <div>
+        <legend>Производитель</legend>
+        <div>
+            <input type="radio" id="kbeGen" name="procreater" value="KBE" checked />
+            <label for="KBE">KBE</label>
+        </div>
+        <div>
+            <input type="radio" id="rehauGen" name="procreater" value="REHAU" />
+            <label for="REHAU">REHAU</label>
+        </div>
+
+        <div>
+            <input type="radio" id="montblankGen" name="procreater" value="MONTBLANC" />
+            <label for="MONTBLANC">MONTBLANC</label>
+        </div>
+    </div>  
+        <div>
+            <legend>Колличество секций</legend>
+            <div>
+                <input type="radio" id="onew" name="sectionNum" value="one" checked />
+                <label for="1">1</label>
+            </div>
+            <div>
+                <input type="radio" id="duow" name="sectionNum" value="two" />
+                <label for="2">2</label>
+            </div>
+    
+            <div>
+                <input type="radio" id="triplew" name="sectionNum" value="three" />
+                <label for="3">3</label>
+            </div>
+        </div>
+            <div>
+                <button type="button">заказать точный размер</button>
+            </div>
+                <div>
+                    <form action="" method="post" id="profileType">
+                        <p><select size="3" multiple name="typeOfProfile">
+                        <option id="">тип профиля</option>
+                        <option value="" id="">Engine</option>
+                        <option value="" id="">Expert</option>
+                        </select></p>
+                    </form>
+                </div>
+                    <div>
+                        <form action="" method="post" id="oneWindowForm">
+                            <p><select size="3" multiple name="1stSec">
+                            <option value="" id="">Поворотно-откидная</option>
+                            <option value="" id="">Поворотная</option>
+                            <option value="" id="">Откидная</option>
+                            <option value="" id="">Глухая</option>
+                            </select></p>
+                        </form>
+                    </div>
+                        <div>
+                            <form action="" method="post" id="twoWindowForm1">
+                                <p><select size="3" multiple name="2ndSec1">
+                                <option value="" >Глухая</option>
+                                <option value="" >Поворотно-откидная</option>
+                                <option value="" >Поворотная</option>
+                                <option value="" >Откидная</option>
+                                </select></p>
+                            </form>
+                        </div>
+                            <div>
+                                <form action="" method="post" id="twoWindowForm2">
+                                    <p><select size="3" multiple name="2rdSec2">
+                                    <option value="">глухая</option>
+                                    <option value="">Поворотно-откидная</option>
+                                    <option value="">Поворотная</option>
+                                    <option value="">Откидная</option>
+                                    </select></p>
+                                </form>
+                            </div>
+                                <script src="calculator.js"></script>
+</body>
+</html>
